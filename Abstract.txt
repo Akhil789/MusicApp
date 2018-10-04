@@ -1,0 +1,13 @@
+Music recording database consists of five main tables namely Musician, Album, Song, Playlist, Favorites. Each of the table is described briefly below:
+
+Musician is identified by music id and contains name, address. Musicians can be searched with name of the musician.
+
+Album is identified as album id and contains title, copyright date, format, contains list of songs. Albums can be searched with title of the Album.
+
+Song is identified by song title and contains author, genre, language, duration, release year. Song can be filtered by it’s properties. Songs can be searched with song title.
+
+Playlist is identified by playlist id and contains name, list of one or more songs. Playlist can be searched with name of the Playlist.
+
+Favorites contains list of all songs which are liked by user. Musician and song have a many to many relationship called compose.
+
+Song and Album have many to one relationship called associated. In schema diagram, we represent compose relation as a table and it contains music id and song title both together as a composite primary key of compose table.
